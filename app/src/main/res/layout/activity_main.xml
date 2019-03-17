@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_height= "match_parent"
+        android:layout_width="wrap_content"
+        />
+
+
+    <fragment
+        android:id="@+id/fragBlue"
+        android:name="com.kkaty.fragments.Fragments.BlueFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <Button
+        android:id="@+id/btAddYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onAddingYellow"
+        android:text="Add Yellow Fragment" />
+
+
+    <Button
+        android:id="@+id/btnRemoveYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onRemovingYellow"
+        android:text="Remove Yellow Fragment" />
+
+    <Button
+        android:id="@+id/btnAddRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onAddingRed"
+        android:text="Add Red Fragment" />
+
+    <Button
+        android:id="@+id/btnRemoveRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onRemovingYellow"
+        android:text="Remove Red Fragment" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onRemovingFragment"
+        android:text="Remove Fragment" />
+
+
+
+
+
+
+</Layout>
